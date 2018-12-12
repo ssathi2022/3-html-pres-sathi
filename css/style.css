@@ -1,10 +1,5 @@
 body, html {
     height: 100%;
-            }
-
-body {
-  font-family: Arial;
-  font-size: 17px;
 }
 
 
@@ -19,9 +14,10 @@ body {
     background-size: cover;
     }
 
+
 .fs-img2 { 
     /* The image used */
-    background-image: url("/img/povertygirl.jpeg");
+    background-image: url("/img/povertyslide1.jpg");
     /* Full height */
     height: 100%; 
     /* Center and scale the image nicely */
@@ -30,9 +26,22 @@ body {
     background-size: cover;
     }
 
+
 .fs-img3 { 
     /* The image used */
-    background-image: url("/img/povertywhatispoverty.jpg");
+    background-image: url("/img/povertyslide2.jpeg");
+    /* Full height */
+    height: 100%; 
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+
+.fs-img4 { 
+    /* The image used */
+    background-image: url("/img/povertyslide3.jpg");
     /* Full height */
     height: 100%; 
     /* Center and scale the image nicely */
@@ -43,8 +52,9 @@ body {
 
 
 .black-transparent {
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.5);
 }
+
 
 /* Style for the full screen image ONLY */
 h1fci{
@@ -55,7 +65,7 @@ h1fci{
 }
 
 h2fci{
-    font-family: 'Merriweather', serif;
+   font-family: 'Merriweather', serif;
     font-size:4vh;
     font-size:3vw;
     background-color: rgba(0,0,0,0.7);
@@ -63,24 +73,24 @@ h2fci{
 
 
 
-/* Style for not ful screen image */
+/* Style for non full screen image */
 
 h1{
-    
+
     font-family: 'Merriweather', serif;
-    font-size: 7vh;
+    font-size: 8vh;
+    overflow: hidden;
     
 }
 
 h2{
     font-family: 'Merriweather', serif;
-    font-size:2vh;
-    font-size:2vw;
-    background-color: rgba(0,0,0,0.7);
+    font-size: 3.2vh;
+    padding: 1%;
 }
 
 
-/*Full-screenvideo/
+
 /* Style the video: 100% width and height to cover the entire window */
 #myVideo {
     position: fixed;
@@ -89,6 +99,7 @@ h2{
     min-width: 100%; 
     min-height: 100%;
 }
+
 
 /* Style for the full screen image ONLY */
 .content {
@@ -100,15 +111,18 @@ h2{
     padding: 10px;
 }
 
+
 /* Style for the heading on video slide */
 .content1 {
     position: fixed;
-    bottom:0;
-    background: rgba(0, 0, 0, 0.7);
+    top:0;
+    background: rgba(0, 0, 0, .7);
     color: #f1f1f1;
    width: 100%;
     padding: 20px;
 }
+
+
 /* Style the button used to pause/play the video */
 #myBtn {
     width: 200px;
@@ -126,6 +140,7 @@ h2{
 }
 
 
+/* Style for media queries */
 @media (max-width:600px)
 #myVideo {
     position: fixed;
@@ -136,4 +151,12 @@ h2{
 }
 
 
-@media (min-width:)
+ @media (max-width: 1080px )
+     #myVideo {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+        }
+    }
